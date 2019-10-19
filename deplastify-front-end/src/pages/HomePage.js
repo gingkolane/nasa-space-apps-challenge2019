@@ -8,9 +8,7 @@ import { geolocated } from 'react-geolocated'
 
 const HomePage = props => {
   const { coords } = props
-
   // console.log('location data?', coords)
-
     return(<>
       { coords ?
         <>
