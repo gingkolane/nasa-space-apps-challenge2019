@@ -2,4 +2,4 @@ const googleMapApiKey = () => {
   return 'tbd'
 };
 
-export default googleMapApiKey()
+export default googleMapApiKey() 
