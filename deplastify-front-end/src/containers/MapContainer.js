@@ -6,7 +6,7 @@ const MapContainer = props => {
   const { coords } = props
 
   return(<>
-    <div className=''>
+    <div className='m-2'>
       <Map coords={coords}/>
     </div>
     </>)

@@ -3,7 +3,7 @@ import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
 import googleMapApiKey from '../secrets/GoogleMapKey'
 
 const Map = props => {
-  console.log('map',props)
+  // console.log('map',props)
   return(<GoogleMap
     defaultZoom={15}
     defaultCenter={{lat:40.712776, lng:-74.005974}}/>)

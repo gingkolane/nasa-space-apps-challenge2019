@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 import SiteCard from '../components/SiteCard'
 
 const SitesContainer = props => {
-  return(<div className='' stlye={{overflow: 'scroll'}}>
+  return(<div className='m-2' stlye={{overflow: 'scroll'}}>
     <SiteCard/>
     <SiteCard/>
     <SiteCard/>
