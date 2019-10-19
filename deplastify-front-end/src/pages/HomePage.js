@@ -13,7 +13,7 @@ const HomePage = props => {
       { coords ?
         <>
         <Header/>
-        <MapContainer coords={coords}/>
+        {/*<MapContainer coords={coords}/>*/}
         </> : <LoadingPage/>}
     </>)
 };

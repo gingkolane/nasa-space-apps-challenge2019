@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Lobster', cursive;
+  font-family: 'Lobster Two', cursive;
+}
+
 .map-container {
     height: 80vh;
-    width: 98%;
+    width: 100%;
 }
+

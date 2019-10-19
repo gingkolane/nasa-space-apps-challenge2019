@@ -4,11 +4,14 @@ import { withRouter } from 'react-router'
 import './css/main.css';
 import HomePage from './pages/HomePage'
 import SitePage from './pages/SitePage'
+import PickupPage from './pages/PickupPage'
 
 function App() {
   return (<>
     <Switch>
-      <Route path='/' component={HomePage}/>
+      <Route exact path='/' component={HomePage}/>
+      <Route exact path='/pickup' component={PickupPage}/>
+      <Route exact path='/site' component={SitePage}/>
     </Switch>
   </>);
 }
