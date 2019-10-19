@@ -17,3 +17,11 @@
   background-repeat: no-repeat;
 }
 
+
+.location-search-form {
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  width: 40%;
+  background: white;
+}

@@ -2,21 +2,22 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import MapContainer from '../containers/MapContainer.js'
 
+import LocationSearchForm from '../components/LocationSearchForm'
 import LoadingPage from '../pages/LoadingPage'
 
 import { geolocated } from 'react-geolocated'
 
 const HomePage = props => {
-  const { coords } = props
-  // console.log('location data?', coords)
+  // const { coords } = props
+
     return(<>
-      { coords ?
-        <>
+
+
         <Header/>
         <div className='drifter-map'>
+          <LocationSearchForm />
         </div>
-        {/*<MapContainer coords={coords}/>*/}
-        </> : <LoadingPage/>}
+
     </>)
 };
 
