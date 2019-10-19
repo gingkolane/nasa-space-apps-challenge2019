@@ -1,13 +1,16 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import './css/main.css';
 import HomePage from './pages/HomePage'
-import Header from './components/Header'
+import SitePage from './pages/SitePage'
 
 function App() {
   return (<>
-    <Header/>
-    <HomePage />
+    <Switch>
+      <Route path='/' component={HomePage}/>
+    </Switch>
   </>);
 }
 
-export default App;
+export default withRouter(App);

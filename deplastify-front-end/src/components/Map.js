@@ -1,16 +1,24 @@
 import React, { useState } from 'react'
-import { GoogleMap, withScriptJs, withGoogleMap } from 'react-google-maps';
+import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
 import googleMapApiKey from '../secrets/GoogleMapKey'
 
 const Map = props => {
-
-  return(<>
-        <GoogleMap
-          bootstrapURLKeys={{key: googleMapApiKey}}
-          defaultCenter={{lat:60, lng: 30}}
-          defaultZoom={11}
-          />
-    </>)
+  console.log('map',props)
+  return(<GoogleMap
+    defaultZoom={15}
+    defaultCenter={{lat:40.712776, lng:-74.005974}}/>)
 };
 
-export default withScriptJs(withGoogleMap(Map))
+const WrappedMap = withScriptjs(withGoogleMap(Map))
+
+export default function myMap(){
+  return(
+    <div style={{width: '100%', height: '100vh'}}>
+      <WrappedMap googleMapURL={"https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"}
+      loadingElement={<div style={{height:'100%'}}/>}
+      containerElement={<div style={{height:'100%'}}/>}
+      mapElement={<div style={{height:'100%'}}/>}
+      />
+    </div>
+  )
+}
