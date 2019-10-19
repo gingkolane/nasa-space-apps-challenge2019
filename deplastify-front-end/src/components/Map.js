@@ -1,26 +1,16 @@
 import React, { useState } from 'react'
-import GoogleMapReact from 'google-map-react';
+import { GoogleMap, withScriptJs, withGoogleMap } from 'react-google-maps';
+import googleMapApiKey from '../secrets/GoogleMapKey'
 
 const Map = props => {
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
   return(<>
-      <div className=''>
-        <GoogleMapReact
-          bootstrapURLKeys={{}}
+        <GoogleMap
+          bootstrapURLKeys={{key: googleMapApiKey}}
           defaultCenter={{lat:60, lng: 30}}
           defaultZoom={11}
-          >
-          <AnyReactComponent
-          lat={60}
-          lng={30}
-          text={'Marker'}
           />
-        </GoogleMapReact>
-
-      </div>
     </>)
 };
 
-export default Map
+export default withScriptJs(withGoogleMap(Map))

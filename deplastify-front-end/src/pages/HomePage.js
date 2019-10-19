@@ -4,9 +4,7 @@ import MapContainer from '../containers/MapContainer.js'
 const HomePage = props => {
     return(<>
         <MapContainer/>
-
-        Filter Options
-
+        
     </>)
 };
 
