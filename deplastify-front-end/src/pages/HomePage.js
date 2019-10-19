@@ -13,6 +13,8 @@ const HomePage = props => {
       { coords ?
         <>
         <Header/>
+        <div className='drifter-map'>
+        </div>
         {/*<MapContainer coords={coords}/>*/}
         </> : <LoadingPage/>}
     </>)
