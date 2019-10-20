@@ -15,7 +15,7 @@ const SitePage = props => {
 
       <div className='d-flex m-2'>
 
-        <div className='container border rounded mx-2 sites-container-wrapper' style={{width:'50%', height: '85vh'}}>
+        <div className='container border rounded mx-2 sites-container-wrapper' style={{width:'50%', height: '55vh'}}>
 
         <div className='m-2'>
           <h4>Information</h4>

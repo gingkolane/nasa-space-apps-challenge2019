@@ -11,11 +11,6 @@ const EventsContainer = props => {
       <EventCard/>
       <EventCard/>
       <EventCard/>
-      <EventCard/>
-      <EventCard/>
-      <EventCard/>
-      <EventCard/>
-      <EventCard/>
     </div>)
 };
 
