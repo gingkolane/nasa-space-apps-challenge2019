@@ -6,7 +6,7 @@ const Map = props => {
   // console.log('map',props)
   return(<GoogleMap
     defaultZoom={15}
-    defaultCenter={{lat:40.712776, lng:-74.005974}}/>)
+    defaultCenter={{lat:40.583164, lng:-73.695040}}/>)
 };
 
 const WrappedMap = withScriptjs(withGoogleMap(Map))

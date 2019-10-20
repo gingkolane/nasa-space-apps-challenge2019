@@ -8,14 +8,14 @@ const DataContainer = props => {
       <div className='card m-2'>
         <div className='card-body'>
           <h5 className='card-title'>Location</h5>
-          <p className='card-text'>Loction details</p>
+          <p className='card-text'>Queens NY, NY</p>
         </div>
       </div>
 
       <div className='card m-2'>
         <div className='card-body'>
           <h5 className='card-title'>Trash Level</h5>
-          <p className='card-text'>Trash Level</p>
+          <p className='card-text text-danger'>High</p>
         </div>
       </div>
 

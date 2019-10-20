@@ -18,6 +18,7 @@ const HomePage = props => {
         <img src='https://i.imgur.com/BRlMr8U.png' alt='map' className='drifter-map-image'/>
 
         <LocationSearchForm />
+      
 
     </>)
 };

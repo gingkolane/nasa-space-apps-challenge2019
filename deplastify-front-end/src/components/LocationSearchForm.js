@@ -17,8 +17,10 @@ const LocationSearmForm = props => {
       <button className='btn btn-primary' onClick={() => handleClick('sites')}>Search</button>
     </div>
 
-    <div>
-
+    <div className=''>
+      <div className=' border rounded p-2 m-2'>
+        <p className='m-auto'>Enter a location above to search the area for pickup sites!</p>
+      </div>
     </div>
   </div>)
 };

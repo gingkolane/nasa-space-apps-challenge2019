@@ -74,6 +74,9 @@ body {
 
 .site-image {
   width: 50%;
+  margin: auto;
+  border-radius: 10px;
+
 }
 
 .site-image-container {
