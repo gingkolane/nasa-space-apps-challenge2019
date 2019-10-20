@@ -1,0 +1,2 @@
+class DriftersController < ApplicationController
+end

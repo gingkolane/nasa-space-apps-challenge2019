@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :drifters
   resources :events_users
   resources :pickups
   resources :events
