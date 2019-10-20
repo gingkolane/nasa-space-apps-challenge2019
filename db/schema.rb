@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(version: 2019_10_20_030606) do
   create_table "events", force: :cascade do |t|
     t.text "name"
     t.integer "site_id"
-    t.text "organized_by"
+    t.text "organizer"
     t.date "date"
     t.time "time"
-    t.text "description"
+    t.text "location"
     t.text "event_url"
   end
 
@@ -65,20 +65,18 @@ ActiveRecord::Schema.define(version: 2019_10_20_030606) do
 
   create_table "sites", force: :cascade do |t|
     t.text "name"
-    t.text "lon"
-    t.text "lat"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.text "org_responsible"
+    t.text "END_LAT"
+    t.text "END_LON"
+    t.text "DEATH CODE"
     t.text "trash_level"
+    t.text "reponsible_organization"
+    t.text "drifter_ID"
   end
 
   create_table "users", force: :cascade do |t|
     t.text "name"
     t.text "username"
     t.text "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
