@@ -13,20 +13,39 @@
 ActiveRecord::Schema.define(version: 2019_10_20_030606) do
 
   create_table "drifters", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "drifter_ID", limit: 255
+    t.text "WMO", limit: 255
+    t.text "EXP", limit: 255
+    t.text "1st DATE", limit: 255
+    t.text "1st LAT", limit: 255
+    t.text "1st LON", limit: 255
+    t.text "END DATE", limit: 255
+    t.text "END LAT", limit: 255
+    t.text "END LON", limit: 255
+    t.text "DROG OFF Month", limit: 255
+    t.text "DROG OFF DATE", limit: 255
+    t.text "DROG OFF YEAR", limit: 255
+    t.text "DOFF LT", limit: 255
+    t.text "DOFF LN", limit: 255
+    t.text "DEATH CODE", limit: 255
+    t.text "MANUF", limit: 255
+    t.text "TYPE", limit: 255
+    t.integer "site_id"
   end
 
   create_table "events", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "name"
+    t.integer "site_id"
+    t.text "organized_by"
+    t.date "date"
+    t.time "time"
+    t.text "description"
+    t.text "event_url"
   end
 
   create_table "events_users", force: :cascade do |t|
     t.integer "user_id"
     t.integer "event_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["event_id"], name: "index_events_users_on_event_id"
     t.index ["user_id"], name: "index_events_users_on_user_id"
   end
@@ -34,18 +53,30 @@ ActiveRecord::Schema.define(version: 2019_10_20_030606) do
   create_table "pickups", force: :cascade do |t|
     t.integer "user_id"
     t.integer "site_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.date "date"
+    t.time "time"
+    t.text "content"
+    t.decimal "weight"
+    t.text "pict_url_before"
+    t.text "pict_url_after"
     t.index ["site_id"], name: "index_pickups_on_site_id"
     t.index ["user_id"], name: "index_pickups_on_user_id"
   end
 
   create_table "sites", force: :cascade do |t|
+    t.text "name"
+    t.text "lon"
+    t.text "lat"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "org_responsible"
+    t.text "trash_level"
   end
 
   create_table "users", force: :cascade do |t|
+    t.text "name"
+    t.text "username"
+    t.text "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
