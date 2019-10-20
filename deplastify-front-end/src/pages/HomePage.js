@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from '../components/Header'
 // import MapContainer from '../containers/MapContainer.js'
 
 import LocationSearchForm from '../components/LocationSearchForm'
-import LoadingPage from '../pages/LoadingPage'
+// import LoadingPage from '../pages/LoadingPage'
 
 import { geolocated } from 'react-geolocated'
 
@@ -14,9 +14,10 @@ const HomePage = props => {
 
 
         <Header/>
-        <div className='drifter-map'>
-          <LocationSearchForm />
-        </div>
+
+        <img src='https://i.imgur.com/BRlMr8U.png' alt='map' className='drifter-map-image'/>
+
+        <LocationSearchForm />
 
     </>)
 };

@@ -13,13 +13,12 @@ const LocationSearmForm = props => {
 
     <div className='d-flex justify-content-between p-2'>
       <img className='logo-sm'src='https://i.imgur.com/1F0AWbU.png' alt='bird with bottle'/>
-      <span className=''></span>
-      <input style={{width: '75%'}} className='border rounded' type='text' placeholder='Enter Location'/>
+      <input style={{width: '75%', paddingLeft:'8px'}} className='border rounded' type='text' placeholder='Enter Location'/>
       <button className='btn btn-primary' onClick={() => handleClick('sites')}>Search</button>
     </div>
 
     <div>
-      
+
     </div>
   </div>)
 };
