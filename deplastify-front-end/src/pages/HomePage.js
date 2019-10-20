@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
-import MapContainer from '../containers/MapContainer.js'
+// import MapContainer from '../containers/MapContainer.js'
 
 import LocationSearchForm from '../components/LocationSearchForm'
 import LoadingPage from '../pages/LoadingPage'

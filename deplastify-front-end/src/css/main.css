@@ -3,6 +3,10 @@
   font-family: 'Lobster Two', cursive;
 }
 
+body {
+  overflow: hidden;
+}
+
 .map-container {
     height: 80vh;
     width: 100%;
@@ -24,4 +28,11 @@
   left: 10vw;
   width: 40%;
   background: white;
+}
+
+.sunset-background {
+  background-image: url('https://i.imgur.com/wqkvd7B.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
