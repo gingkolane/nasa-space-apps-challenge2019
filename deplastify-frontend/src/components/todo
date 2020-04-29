@@ -1,0 +1,15 @@
+Set up for google api key using react-google-maps in react: 
+
+
+In map conponent,
+
+<WrappedMap googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
+
+
+In .env:
+REACT_APP_GOOGLE_KEY="AzaSyA5VyniKHQpvNmSAsn"
+
+
+In .gitignore, make sure .env is in there:
+.env
+
